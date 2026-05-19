@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Sorry Anushika Ji ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(-45deg,#ff758c,#ff7eb3,#ff5f6d,#ffc371);
+    background-size:400% 400%;
+    animation:bgAnimation 10s ease infinite;
+    padding:20px;
+}
+
+@keyframes bgAnimation{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.card{
+    width:100%;
+    max-width:420px;
+    padding:35px 25px;
+    border-radius:30px;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(12px);
+    text-align:center;
+    box-shadow:0 8px 30px rgba(0,0,0,0.25);
+    animation:fadeIn 2s ease;
+    position:relative;
+    z-index:2;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+h1{
+    color:white;
+    font-size:2.2rem;
+    margin-bottom:15px;
+    animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.05);}
+    100%{transform:scale(1);}
+}
+
+p{
+    color:white;
+    font-size:1rem;
+    line-height:1.9;
+    margin-top:10px;
+}
+
+button{
+    margin-top:25px;
+    padding:14px 28px;
+    border:none;
+    border-radius:40px;
+    background:white;
+    color:#ff4f81;
+    font-size:1rem;
+    font-weight:700;
+    cursor:pointer;
+    transition:0.3s;
+    box-shadow:0 4px 15px rgba(255,255,255,0.3);
+}
+
+button:hover{
+    transform:scale(1.08);
+}
+
+#message{
+    display:none;
+    margin-top:25px;
+    color:white;
+    font-size:1.1rem;
+    animation:showMsg 1s ease;
+}
+
+@keyframes showMsg{
+    from{
+        opacity:0;
+        transform:translateY(15px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.hearts span{
+    position:absolute;
+    bottom:-50px;
+    color:white;
+    font-size:22px;
+    animation:float 10s linear infinite;
+    opacity:0.8;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0) scale(0);
+        opacity:0;
+    }
+    50%{
+        opacity:1;
+    }
+    100%{
+        transform:translateY(-120vh) scale(1.5);
+        opacity:0;
+    }
+}
+
+.hearts span:nth-child(1){
+    left:10%;
+    animation-delay:0s;
+}
+.hearts span:nth-child(2){
+    left:25%;
+    animation-delay:2s;
+}
+.hearts span:nth-child(3){
+    left:40%;
+    animation-delay:4s;
+}
+.hearts span:nth-child(4){
+    left:60%;
+    animation-delay:1s;
+}
+.hearts span:nth-child(5){
+    left:75%;
+    animation-delay:3s;
+}
+.hearts span:nth-child(6){
+    left:90%;
+    animation-delay:5s;
+}
+
+@media(max-width:500px){
+
+    h1{
+        font-size:1.8rem;
+    }
+
+    p{
+        font-size:0.95rem;
+    }
+
+    button{
+        width:100%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Romantic Background Music -->
+<audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mp3">
+</audio>
+
+<div class="hearts">
+    <span>❤️</span>
+    <span>💖</span>
+    <span>💕</span>
+    <span>❤️</span>
+    <span>💘</span>
+    <span>💞</span>
+</div>
+
+<div class="card">
+
+    <h1>Sorry Anushika Ji ❤️</h1>
+
+    <p>
+        Mujhe pata hai maine aapko hurt kiya...  
+        Aur meri wajah se aap sad ho gayi... 🥺
+        <br><br>
+        But sach me, aap meri life ki sabse important person ho.  
+        Main kabhi bhi aapko khona nahi chahta... 💔
+        <br><br>
+        Please mujhe maaf kar do Anushika Ji... ❤️
+    </p>
+
+    <button onclick="showLove()">
+        Click Here For Surprise ✨
+    </button>
+
+    <div id="message">
+      Maaf Kar Dijiye Anushika Ji ❤️🥺 
+    </div>
+
+</div>
+
+<script>
+function showLove(){
+    document.getElementById("message").style.display="block";
+}
+</script>
+
+</body>
+</html>
